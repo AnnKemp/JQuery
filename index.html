@@ -4,17 +4,33 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("p").click(function(){
-    $(this).hide();
+  $("button").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
   });
 });
 </script>
+<style>
+    body{padding-left:50px; padding-top:30px;}
+    div{
+        width: 100px;
+        height: 100px;
+        display:none;
+        position: relative;
+        margin-top:20px;
+    }
+    #div1{ background-color:red;}
+    #div2{ background-color:green;}
+    #div3{ background-color:blue;}
+    button{ height: 40px; background-color:white; border: solid 1px gray; padding-top:10px; padding-bottom:10px; margin-bottom:20px;
+    }
+</style>
 </head>
 <body>
-
-<p>If you click on me, I will disappear.</p>
-<p>Click me away!</p>
-<p>Click me too!</p>
-
+<button>Click to fade in boxes</button>
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
 </body>
 </html>
