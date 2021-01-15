@@ -1,2 +1,2 @@
-Some jQuery excercises are published here, in this folder.
-An example: https://annkemp.github.io/JQuery/. 
+One jQuery excercise is published here:<br>
+https://annkemp.github.io/JQuery/
