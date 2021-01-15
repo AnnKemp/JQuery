@@ -1,2 +1,2 @@
 One jQuery excercise is published here:<br>
-https://annkemp.github.io/JQuery/
+https://annkemp.github.io/jQuery/index.html
