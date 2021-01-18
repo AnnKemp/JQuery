@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#panel").animate({left: '250px'});
+  });
+});
+</script>
+<style>
+    body{padding-left:20px; padding-top:10px;}
+   #panel{
+       height: 100px;
+       width: 100px;
+       margin-top:20px;
+       position: absolute;
+       background-color: #98bf21;
+   }
+</style>
+</head>
+<body>
+<button>Start animation</button>
+<div id="panel"></div>
+</body>
+</html>
