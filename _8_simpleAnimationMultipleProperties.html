@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#panel").animate({
+left: '250px',
+opacity:'0.5',
+height: '150px',
+width: '150px',
+borderTopLeftRadius: '50%', 
+borderTopRightRadius: '50%', 
+borderBottomLeftRadius: '50%', 
+borderBottomRightRadius:'50%' }, 3000);
+  });
+});
+</script>
+<style>
+    body{padding-left:20px; padding-top:10px;}
+   #panel{
+       height: 100px;
+       width: 100px;
+       margin-top:20px;
+       position: absolute;
+       background-color:red;
+   }
+</style>
+</head>
+<body>
+<button>Start animation</button>
+<div id="panel"></div>
+</body>
+</html>
