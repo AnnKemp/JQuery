@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#green").animate({
+height: 'toggle'
+    });
+    $("#red").animate({
+height: 'show'
+    });
+    $("#blue").animate({
+height: 'hide'
+    });
+  });
+});
+</script>
+<style>
+    body{padding-left:20px; padding-top:10px; font-family: Arial, Helvetica, sans-serif;}
+   div{
+       height: 100px;
+       width: 100px;
+       margin-top:20px;
+       position: relative;
+       background-color:#98bf21;
+   }
+   #red{
+    background-color:red;
+    display: none;
+   }
+   #blue{
+    background-color:blue;
+   }
+</style>
+</head>
+<body>
+<button>Start animation</button>
+<div id="green"></div>
+<div id="red"></div>
+<div id="blue"></div>
+<p>Make the box dissapear and/or reappear.</p>
+</body>
+</html>
