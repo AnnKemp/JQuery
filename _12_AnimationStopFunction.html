@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown(5000);
+  });
+  $("button").click(function(){
+    $("#panel").stop();
+  });
+});
+</script>
+<style>
+    body{padding-left:20px; padding-top:10px; font-family: Arial, Helvetica, sans-serif;}
+   #flip, #panel{
+       padding:5px;
+       width: 300px;
+       position: relative;
+       background-color:#16A085;
+       text-align:center;
+       font-weight: bold;
+       color:white;
+       border: solid 1px gray;
+   }
+   #panel{
+       background-color:yellow;
+       display: none;
+       height:700px;
+       color:black;
+       font-weight: normal;
+       line-height: 50px;
+   }
+   button{
+       margin-bottom:20px;
+       padding:5px;
+   }
+   
+</style>
+</head>
+<body>
+<button>Stop the panel from sliding down</button>
+<div id="flip">click here to slide down the panel</div>
+<div id="panel">Here comes the text</div>
+</body>
+</html>
