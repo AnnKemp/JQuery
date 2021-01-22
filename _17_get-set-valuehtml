@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    alert("Text: "+$("#test").text());
+    });
+  });
+</script>
+<style>
+body{padding-left:20px; padding-top:10px; font-family: Arial, Helvetica, sans-serif;}
+button{
+       margin-bottom:20px;
+       padding:5px;
+   }
+</style>
+</head>
+<body>
+<p id="test">This is some <strong>bold</strong> text in a paragraph.</p>
+<button id="btn1">show text</button>
+<button id="btn2">show html</button>
+</body>
+</html>
